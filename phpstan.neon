@@ -1,0 +1,13 @@
+parameters:
+	level: max
+	paths:
+		- src
+	ignoreErrors:
+	    - '#Call to an undefined method [a-zA-Z0-9\\_]+Domain[a-zA-Z0-9\\_]+#'
+	    - '#Call to an undefined method [a-zA-Z0-9\\_]+Resources[a-zA-Z0-9\\_]+#'
+	    - '#Access to an undefined property [a-zA-Z0-9\\_]+Domain[a-zA-Z0-9\\_$]+#'
+	    - '#Access to an undefined property [a-zA-Z0-9\\_]+Resources[a-zA-Z0-9\\_$]+#'
+	    - '#Parameter \#1 \$request of method Illuminate\\Http\\Resources\\Json\\ResourceCollection::toArray\(\)[ a-zA-Z0-9\\_$]+#'
+	    - '#Anonymous class is not allowed to extend#'
+	    - '#is not allowed to extend#'
+	checkGenericClassInNonGenericObjectType: false
